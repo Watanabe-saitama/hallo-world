@@ -28,9 +28,10 @@ jobs:
 
     - name: Analysing the code with flake8
       run: |
-        flake8 . > flake8_report.txt || true
+        python -m flake8 . > flake8_report.txt || true
 
     - name: Upload flake8 report
+      if: always()
       uses: actions/upload-artifact@v3
       with:
         name: flake8-report
