@@ -1,9 +1,13 @@
 name: flake8
 
 on:
+  push:
+    paths:
+      - '**.py'
   pull_request:
     paths:
       - '**.py'
+  workflow_dispatch:
 
 jobs:
   syntax-check:
