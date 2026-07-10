@@ -81,3 +81,26 @@ WBSの作り方
 
 # 第6回
 WBSの作成の続きである。
+
+# 2026/07/10 追加分
+## Githubにあるリモートレポジトリの内容をwebpageとして公開する方法
+### Githubでの設定
+1. Settingsタブより、hello-worldを<user>.github.ioとする。
+2. Settings→Pages→Build and deployment→Sourceより、Github Actionsを設定。
+3.  Github pages Jekyll→configureを実行する。
+4. デフォルトままymlをcommitする。
+
+### Codespaceでの設定
+1. devブランチ内で以下のコマンドを順番に打つ。
+- mkdir docs
+- cd docs
+- jekyll new --skip-bundle
+- bundle install
+2. config.ymlファイルを設定する。
+- 21行目のタイトルを変更
+- 27行目にjekyllをインストールした場所を打つ
+- 28行目にアカウント名を入力する
+3. index.markdownにtitleを追加する。
+4. mainブランチへプルリクエスト⇒マージ
+
+その後、https://アカウント名.github.io/hello-world/docs/を入力するとページが出現する。
