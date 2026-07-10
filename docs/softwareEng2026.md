@@ -1,3 +1,9 @@
+---
+layout: page
+title: "software Eng. lecture note"
+permalink: /docs/softwareEng2026
+---
+
 # 第1回
 ソフトウェアで難しいところは、実務から体系化された知見・知見と実践の乖離・個々人のソフトウェア工学の知識だけでは不十分であるというところである。
 
